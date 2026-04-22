@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.wenxuan-xu.com/">
+  <meta http-equiv="refresh" content="0;url=https://www.wenxuan-xu.com/">
+  <script>
+    (function () {
+      var targetOrigin = "https://www.wenxuan-xu.com";
+
+      var redirects = {
+        "/chambers-china": "/en/concepts/chambers-china",
+        "/chambers-china/": "/en/concepts/chambers-china"
+      };
+
+      var path = window.location.pathname || "/";
+      var mappedPath = redirects[path];
+
+      if (!mappedPath && path.length > 1 && path.endsWith("/")) {
+        mappedPath = redirects[path.slice(0, -1)];
+      }
+
+      var targetPath = mappedPath || path;
+      var target = targetOrigin + targetPath + window.location.search + window.location.hash;
+
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to the new site...</p>
+  <p>
+    If you are not redirected automatically,
+    <a href="https://www.wenxuan-xu.com/">click here</a>.
+  </p>
+</body>
+</html>
